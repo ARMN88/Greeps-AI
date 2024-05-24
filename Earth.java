@@ -183,6 +183,7 @@ public class Earth extends World
       return index;
     }
     public NeuralNetwork reproduce(NeuralNetwork parentA, NeuralNetwork parentB) {
+        // https://youtube.com/playlist?list=PLRqwX-V7Uu6bJM3VgzjNV5YxVxUwzALHV&feature=shared //
         return parentA;
     }
 }

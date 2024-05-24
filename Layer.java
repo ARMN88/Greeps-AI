@@ -14,6 +14,14 @@ public class Layer {
     return result;
   }
 
+  public Matrix getWeights() {
+    return weights;
+  }
+
+  public Matrix getBias() {
+    return bias;
+  }
+
   public String toString() {
     return weights.getX() + " x " + weights.getY();
   }

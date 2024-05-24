@@ -122,7 +122,8 @@ public class Earth extends World
                 for(int i = 0; i < 10; i++) {
                     int parentA = pickOne();
                     int parentB = pickOne();
-                    newList[i] = reproduce(brains[parentA], brains[parentB]);
+                    newList[i] = NeuralNetwork.crossover(brains[parentA], brains[parentB]);
+                    newList[i].mutate();
                 }
                 
                 brains = newList;
@@ -181,9 +182,5 @@ public class Earth extends World
       index--;
       
       return index;
-    }
-    public NeuralNetwork reproduce(NeuralNetwork parentA, NeuralNetwork parentB) {
-        // https://youtube.com/playlist?list=PLRqwX-V7Uu6bJM3VgzjNV5YxVxUwzALHV&feature=shared //
-        return parentA;
     }
 }
